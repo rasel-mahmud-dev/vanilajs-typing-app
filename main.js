@@ -237,7 +237,7 @@ function makeProgress(lesson, value){
 		app.removeChild(letter)
 	}, 100)
 	
-	if(lesson.text[startIndex].toUpperCase() === value.toUpperCase()){
+	if(lesson.text[startIndex] === value){
 		keySound()
 		letter.classList.add("correct")
 		let focus = document.querySelector(".focus")
