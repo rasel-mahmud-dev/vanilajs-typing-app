@@ -1,16 +1,5 @@
-import './style.scss'
-import lessons from "./lessons.json"
+import lessons from "./lessons.js"
 
-import { library, dom } from '@fortawesome/fontawesome-svg-core'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
-import {faHome, faMusic, faMusicSlash, faUser} from "@fortawesome/pro-regular-svg-icons";
-
-// We are only using the user-astronaut icon
-library.add(faHeart, faUser, faHome, faMusicSlash, faMusic, )
-
-// Replace any existing <i> tags with <svg> and set up a MutationObserver to
-// continue doing this as the DOM changes.
-dom.watch()
 
 const refresh = document.getElementById("refresh")
 const speedMeter = document.getElementById("speed-meter")
